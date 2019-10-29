@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<breakfast_menu>
+
+   <food>
+
+      <name>Coffee Cup</name>
+
+      <price>Rs.295.00</price>
+
+      <description>Today's special Roasted Barbeque Burger</description>
+
+      <calories>350</calories>
+
+   </food>
+
+   <food>
+
+      <name>Fantasy Shake</name>
+
+      <price>Rs.200.00</price>
+
+      <description>Mix of caramel nuts with brownie and cookies</description>
+
+      <calories>400</calories>
+
+   </food>
+
+   <food>
+
+      <name>Barbeque pizza</name>
+
+      <price>Rs.350.00</price>
+
+      <description>Smoked barbeque with crisp onion and corn</description>
+
+      <calories>600</calories>
+
+   </food>
+
+   <food>
+
+      <name>French Toast</name>
+
+      <price>Rs.265.00</price>
+
+      <description>Thick slices made from our homemade sourdough bread</description>
+
+      <calories>600</calories>
+
+    </food>
+
+   
+
+ </breakfast_menu>

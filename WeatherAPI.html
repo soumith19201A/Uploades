@@ -1,0 +1,53 @@
+<html> 
+
+<body> 
+
+<form name="FORM"> 
+
+<div>Weather Report</div> 
+
+<br><br> 
+
+    <input type="number" maxlength=6 name="pincode" placeholder="pincode"> 
+
+    <input type="button" onclick="weather()" value="click"> 
+
+    <p id="temp"></p> 
+
+    <p id="type"></p>  
+
+ 
+
+</form> 
+
+<script> 
+function weather() 
+{
+ var xhttp = new XMLHttpRequest(); 
+xhttp.onreadystatechange = function() { 
+    if (this.readyState == 4 && this.status == 200) { 
+        myFunction(this); 
+    } 
+}; 
+var url="https://api.weatherbit.io/v2.0/history/daily?postal_code="+f1.pincode.value+"&country=In&st art_date=2019-09-16&end_date=2019-09-17&key=5928da1fb3ed44928a79c65ad83e80d1"; 
+alert(f1.pincode.value); 
+xhttp.open("GET", url, true); 
+xhttp.send(); 
+} 
+ 
+function myFunction(xml) { 
+ var xmlDoc, txt; 
+    xmlDoc = xml.responseText; 
+ var obj = JSON.parse(xmlDoc); 
+  
+document.getElementById("temp").innerHTML = "Temp="+obj.data[0].temp+"*c"; 
+document.getElementById("type").innerHTML = "City:"+obj.city_name; 
+     
+} 
+</script> 
+
+ 
+
+</body> 
+
+</html>
